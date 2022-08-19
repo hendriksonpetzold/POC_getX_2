@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_poc2/page/get_page/get_page.dart';
 import 'package:getx_poc2/page/home/home_page.dart';
-import 'package:getx_poc2/page/test_get_page/get_page.dart';
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Getx Poc 2',
+      title: 'Getx POC',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           page: () => HomePage(),
         ),
         GetPage(
-          name: '/getpage',
+          name: '/page1',
           page: () => const GetTestPage(),
         )
       ],

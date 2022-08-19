@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.purple,
-        title: const Text('Getx Test'),
+        title: const Text('GetX POC'),
       ),
       body: Center(
         child: Column(
@@ -22,7 +22,10 @@ class HomePage extends StatelessWidget {
               builder: (_) {
                 return Text(
                   '${controller.count}',
-                  style: const TextStyle(color: Colors.black, fontSize: 24),
+                  style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 24,
+                  ),
                 );
               },
             ),
@@ -60,7 +63,7 @@ class HomePage extends StatelessWidget {
               width: Get.width * .4,
               child: ElevatedButton(
                 onPressed: () {
-                  Get.toNamed('/getpage');
+                  Get.toNamed('/page1');
                 },
                 child: const Text('Navigation'),
               ),
